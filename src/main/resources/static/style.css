@@ -1,0 +1,71 @@
+body {
+    font-family: 'Shadows Into Light', cursive;
+    background-image: url("https://static1.squarespace.com/static/536824a3e4b01141ffeec2a1/5b6632d8352f53d381321d15/5b6632e370a6adef3bf36ac7/1533424369948/Ulight_03.jpg?format=1500w");
+    background-repeat: repeat;
+    background-size: auto;
+}
+.boxed {
+    border: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 25px;
+    background: floralwhite;
+    padding: 20px;
+}
+.boxed2 {
+    border: 0px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 25px;
+    background: floralwhite;
+    padding: 20px;
+}
+p{
+    text-indent: 30px;
+}
+
+.foo {
+    counter-reset: foo;
+}
+.foo2 {
+    counter-reset: foo2;
+}
+.foo3 {
+    counter-reset: foo3;
+}
+.foo4 {
+    counter-reset: foo4;
+}
+.foo li {
+    list-style-type: none;
+}
+.foo2 li {
+    list-style-type: none;
+}
+.foo3 li {
+    list-style-type: none;
+}
+.foo4 li {
+    list-style-type: none;
+}
+.foo li::before {
+    counter-increment: foo;
+    content: "1 ." counter(foo) " ";
+    font-weight: bold;
+}
+.foo2 li::before {
+    counter-increment: foo2;
+    content: "2 ." counter(foo2) " ";
+    font-weight: bold;
+}
+.foo3 li::before {
+    counter-increment: foo3;
+    content: "3 ." counter(foo3) " ";
+    font-weight: bold;
+}
+.foo4 li::before {
+    counter-increment: foo4;
+    content: "4 ." counter(foo4) " ";
+    font-weight: bold;
+}
+table{font-size: 25px}
